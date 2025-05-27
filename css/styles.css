@@ -1,0 +1,236 @@
+/* Custom Styles for Comic Book Theme */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-color: #f0f0f0; 
+    color: #333;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 10px 10px;
+    padding-top: 70px; /* Adjusted for potentially taller header */
+}
+body.modal-open {
+    overflow: hidden; 
+}
+
+.font-bangers {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+.comic-border {
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0px #000; 
+}
+
+.comic-border-sm {
+    border: 3px solid #000;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.comic-border-button {
+    border: 3px solid #000;
+    box-shadow: 2px 2px 0px #000;
+    transition: all 0.2s ease-in-out;
+}
+.comic-border-button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}
+.comic-border-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+    background-color: #ddd;
+}
+
+.nav-link {
+    transition: transform 0.2s ease, color 0.2s ease;
+    text-shadow: 1px 1px 0px #fff; 
+}
+.nav-link:hover {
+    transform: translateY(-2px);
+    color: #FFD700; 
+}
+
+.project-card, .blog-card, .cert-card { 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; 
+    cursor: pointer; 
+}
+.project-card:hover, .blog-card:hover, .cert-card:hover {
+    transform: scale(1.03) rotate(-1deg);
+    box-shadow: 8px 8px 0px #000; 
+}
+.project-card img { 
+    transition: transform 0.3s ease;
+}
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.speech-bubble {
+    position: relative;
+    background: #fff;
+    border-radius: .4em;
+    padding: 1em;
+}
+.speech-bubble:after { 
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #fff; 
+    border-bottom: 0;
+    border-left: 0; 
+    margin-left: -10px; 
+    margin-bottom: -20px;
+}
+
+/* Section specific styling */
+#hero {
+    background-color: #3B82F6; 
+    color: white;
+}
+#hero .comic-border { 
+     box-shadow: 6px 6px 0px #00000090;
+}
+#hero h1 { 
+    color: white; 
+    text-shadow: 3px 3px 0px #000; 
+}
+ #hero p { 
+    color: white; 
+    text-shadow: 2px 2px 0px #000; 
+ }
+
+#about { background-color: #FEF3C7; }
+#projects { background-color: #10B981; }
+#blog { background-color: #A78BFA; }
+.blog-card .blog-title-bg { background-color: #C4B5FD; }
+#certifications { background-color: #2DD4BF; }
+.cert-card .cert-title-bg { background-color: #5EEAD4; }
+#contact { background-color: #F87171; }
+
+#contact input, #contact textarea {
+    border: 2px solid #000; padding: 0.5rem; margin-bottom: 0.5rem; 
+    width: 100%; box-shadow: 2px 2px 0px #00000030;
+}
+#contact input:focus, #contact textarea:focus {
+    outline: none; border-color: #DC2626; box-shadow: 0 0 5px #DC2626;
+}
+
+.message-box-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6); display: flex; justify-content: center;
+    align-items: center; z-index: 1000; opacity: 0; visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.message-box-overlay.visible { opacity: 1; visibility: visible; }
+.message-box-content {
+    background-color: white; padding: 2rem; border-radius: 8px;
+    text-align: center; max-width: 400px; width: 90%;
+}
+.message-box-content h3 {
+    font-family: 'Bangers', cursive; font-size: 1.8rem; margin-bottom: 1rem; color: #333;
+}
+.message-box-content p { margin-bottom: 1.5rem; color: #555; font-size: 1rem; }
+.message-box-button {
+    background-color: #3B82F6; color: white; padding: 0.75rem 1.5rem;
+    border-radius: 6px; cursor: pointer; font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+.message-box-button:hover { background-color: #2563EB; }
+
+.angled-divider-top { position: relative; margin-top: -50px; height: 50px; overflow: hidden; }
+.angled-divider-top::before {
+    content: ''; position: absolute; left: 0; bottom: 0; 
+    width: 100%; height: 100px; background: inherit; 
+    transform-origin: bottom left; transform: skewY(-3deg); z-index: 0; 
+}
+.angled-divider-bottom { position: relative; margin-bottom: -50px; height: 50px; overflow: hidden; }
+.angled-divider-bottom::before {
+    content: ''; position: absolute; left: 0; top: 0; 
+    width: 100%; height: 100px; background: inherit; 
+    transform-origin: top left; transform: skewY(3deg); z-index: 0; 
+}
+section > .container { position: relative; z-index: 1; }
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Slightly darker overlay */
+    display: flex; justify-content: center; align-items: center;
+    z-index: 2000; opacity: 0; visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    padding: 20px; /* Add some padding around the modal content wrapper */
+    box-sizing: border-box;
+}
+.modal-overlay.active {
+    opacity: 1; visibility: visible; transition: opacity 0.3s ease;
+}
+.modal-content-wrapper {
+    width: 100%; /* Take full width of padded overlay */
+    height: 100%; /* Take full height of padded overlay */
+    max-width: none; /* Remove max-width constraint if aiming for full page */
+    max-height: none; /* Remove max-height constraint */
+    overflow-y: auto; 
+    display: flex; /* For centering the actual content if it's smaller */
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    background-color: #fff;
+    padding: 2rem; /* Keep some padding inside the content box */
+    border-radius: 0px; 
+    width: 95%; /* Make content take most of the wrapper width */
+    height: 90%; /* Make content take most of the wrapper height */
+    max-width: 1600px; /* Optional: still good to have a very large max-width */
+    max-height: 90vh; /* Keep a bit of vertical margin */
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    display: flex; /* Use flex to structure inner content */
+    flex-direction: column; /* Stack title, image, content vertically */
+    overflow: hidden; /* Prevent inner content from breaking out before scroll */
+}
+.modal-overlay.active .modal-content { transform: scale(1); }
+.modal-close-btn {
+    position: absolute; top: 10px; right: 10px; /* Adjusted for inside a larger modal */
+    background-color: #000; color: yellow; border: 3px solid yellow;
+    width: 40px; height: 40px; border-radius: 50%;
+    font-family: 'Bangers', cursive; font-size: 24px; line-height: 34px; 
+    text-align: center; cursor: pointer; box-shadow: 2px 2px 0px yellow;
+    z-index: 10;
+}
+.modal-close-btn:hover {
+    background-color: red; color: white; border-color: white; box-shadow: 2px 2px 0px white;
+}
+#modalImage {
+    max-width: 100%; 
+    height: auto;
+    max-height: 40vh; /* Adjust max height relative to modal size */
+    object-fit: contain; 
+    margin-bottom: 1rem; 
+    border: 3px solid #000;
+    align-self: center; /* Center image if it's narrower than content area */
+}
+#modalTitle {
+    font-family: 'Bangers', cursive; font-size: 3rem; /* Larger for bigger modal */
+    color: #000; margin-bottom: 0.75rem; text-shadow: 2px 2px 0px #ccc;
+    text-align: center;
+    flex-shrink: 0; /* Prevent title from shrinking */
+}
+#modalSubDetail { 
+    font-size: 1.1rem; color: #555; margin-bottom: 1.5rem; font-style: italic;
+    text-align: center;
+    flex-shrink: 0; /* Prevent sub-detail from shrinking */
+}
+#modalFullContent {
+    font-size: 1.1rem; line-height: 1.7; color: #333;
+    overflow-y: auto; /* This will handle scrolling for the text content */
+    padding: 10px; /* Add some padding inside the scrollable area */
+    flex-grow: 1; /* Allow this area to take remaining space */
+    width: 100%; /* Ensure it uses available width */
+}
+#modalFullContent p { margin-bottom: 1.2em; }

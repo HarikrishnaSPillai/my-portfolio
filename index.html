@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harikrishna - Comic Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="antialiased">
+
+    <header class="bg-blue-500 comic-border-sm fixed top-0 left-0 right-0 z-50 shadow-lg"> 
+        <div class="container mx-auto px-6 py-3 flex flex-wrap justify-between items-center">
+            <a href="#hero" class="font-bangers text-3xl md:text-4xl text-yellow-300 hover:text-white transition-colors duration-300" style="text-shadow: 2px 2px 0 #000;">HARIKRISHNA</a>
+            <nav>
+                <ul class="flex flex-wrap space-x-2 sm:space-x-3 md:space-x-4"> 
+                    <li><a href="#about" class="font-bangers text-lg sm:text-xl text-white nav-link">About</a></li>
+                    <li><a href="#projects" class="font-bangers text-lg sm:text-xl text-white nav-link">Projects</a></li>
+                    <li><a href="#blog" class="font-bangers text-lg sm:text-xl text-white nav-link">Blog</a></li> 
+                    <li><a href="#certifications" class="font-bangers text-lg sm:text-xl text-white nav-link">Certs</a></li> 
+                    <li><a href="#contact" class="font-bangers text-lg sm:text-xl text-white nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-20">
+        <div class="angled-divider-bottom" style="background: #3B82F6;"></div> 
+        <div class="container mx-auto px-6 text-center">
+            <div class="bg-white/30 backdrop-blur-sm p-8 md:p-12 rounded-lg comic-border inline-block">
+                <div class="flex justify-center items-center mb-6">
+                    <img src="https://placehold.co/80x80/FFD700/000000?text=^_^" 
+                         alt="Small Avatar" 
+                         class="w-16 h-16 md:w-20 md:h-20 rounded-full comic-border-sm border-2 border-white mr-3 md:mr-4">
+                    <h1 class="font-bangers text-5xl sm:text-6xl md:text-7xl lg:text-8xl">HEY THERE!</h1>
+                </div>
+                <p class="text-2xl md:text-3xl mb-8 font-bold">I'm Harikrishna, a <span class="text-yellow-300">Creative Developer</span> & <span class="text-yellow-300">Storyteller!</span></p>
+                <a href="#projects" class="font-bangers text-2xl bg-yellow-400 text-black px-8 py-4 rounded comic-border-button hover:bg-yellow-500">SEE MY WORK!</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 relative">
+        <div class="angled-divider-top" style="background: #FEF3C7;"></div> 
+        <div class="container mx-auto px-6">
+            <h2 class="font-bangers text-5xl md:text-6xl text-center mb-12 text-white" style="text-shadow: 2px 2px 0 #000;">WHO AM I?</h2> 
+            <div class="max-w-3xl mx-auto bg-white p-8 md:p-10 rounded-lg comic-border">
+                <img src="https://placehold.co/150x150/FF6347/FFFFFF?text=Me!" alt="Your Photo" class="w-32 h-32 md:w-40 md:h-40 rounded-full comic-border-sm mx-auto mb-6 -mt-20 md:-mt-24 border-4 border-white">
+                <p class="text-lg md:text-xl mb-4 leading-relaxed text-center">
+                    A Cloud Data Engineering Analyst passionate about bridging business needs with technical solutions. 
+                    I specialize in data profiling, modeling, and building scalable, insight-driven systems using Azure and Databricks
+                </p>
+            </div>
+        </div>
+        <div class="angled-divider-bottom" style="background: #FEF3C7;"></div> 
+    </section>
+
+    <section id="projects" class="py-16 md:py-24 relative">
+        <div class="angled-divider-top" style="background: #10B981;"></div> 
+        <div class="container mx-auto px-6">
+            <h2 class="font-bangers text-5xl md:text-6xl text-center mb-16 text-white" style="text-shadow: 2px 2px 0 #000;">SELECTED PROJECTS - ZOWIE!</h2> 
+            <div id="projectCardsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                </div>
+        </div>
+        <div class="angled-divider-bottom" style="background: #10B981;"></div> 
+    </section>
+
+    <section id="blog" class="py-16 md:py-24 relative"> 
+        <div class="angled-divider-top" style="background: #A78BFA;"></div> 
+        <div class="container mx-auto px-6">
+            <h2 class="font-bangers text-5xl md:text-6xl text-center mb-16 text-white" style="text-shadow: 2px 2px 0 #000;">LATEST FROM THE HQ!</h2> 
+            <div id="blogCardsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                </div>
+        </div>
+        <div class="angled-divider-bottom" style="background: #A78BFA;"></div> 
+    </section>
+
+    <section id="certifications" class="py-16 md:py-24 relative">
+        <div class="angled-divider-top" style="background: #2DD4BF;"></div> 
+        <div class="container mx-auto px-6">
+            <h2 class="font-bangers text-5xl md:text-6xl text-center mb-16 text-white" style="text-shadow: 2px 2px 0 #000;">BADGES OF HONOR!</h2> 
+            <div id="certificationCardsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                </div>
+        </div>
+        <div class="angled-divider-bottom" style="background: #2DD4BF;"></div> 
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 relative">
+        <div class="angled-divider-top" style="background: #F87171;"></div> 
+        <div class="container mx-auto px-6">
+            <h2 class="font-bangers text-5xl md:text-6xl text-center mb-12 text-white" style="text-shadow: 2px 2px 0 #000;">SEND A SIGNAL!</h2> 
+            <div class="max-w-xl mx-auto bg-white p-8 md:p-10 rounded-lg comic-border">
+                <form id="contactForm">
+                    <div class="mb-4">
+                        <label for="name" class="block font-bangers text-xl mb-1 text-gray-700">YOUR NAME, HERO:</label>
+                        <input type="text" id="name" name="name" placeholder="Clark Kent" required class="rounded">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block font-bangers text-xl mb-1 text-gray-700">YOUR SECRET EMAIL:</label>
+                        <input type="email" id="email" name="email" placeholder="super@dailyplanet.com" required class="rounded">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block font-bangers text-xl mb-1 text-gray-700">YOUR MESSAGE (TOP SECRET!):</label>
+                        <textarea id="message" name="message" rows="5" placeholder="What amazing feat shall we accomplish?" required class="rounded"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="font-bangers text-2xl bg-red-600 text-white px-10 py-3 rounded comic-border-button hover:bg-red-700">SEND MESSAGE - ZAP!</button> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <p class="font-bangers text-lg">&copy; <span id="currentYear"></span> HARIKRISHNA - ALL RIGHTS RESERVED, BY GOLLY!</p>
+        <p class="text-sm mt-2">Fueled by Comics & Code!</p>
+    </footer>
+
+    <div id="detailModal" class="modal-overlay">
+        <div class="modal-content-wrapper">
+            <div class="modal-content comic-border">
+                <button id="modalCloseBtn" class="modal-close-btn">X</button>
+                <h2 id="modalTitle" class="text-center"></h2>
+                <img id="modalImage" src="" alt="Project Image" class="mx-auto hidden"> 
+                <p id="modalSubDetail" class="text-center"></p>
+                <div id="modalFullContent" class="prose max-w-none">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="messageBoxOverlay" class="message-box-overlay">
+        <div id="messageBoxContent" class="message-box-content comic-border">
+            <h3 id="messageBoxTitle">MessTitle</h3>
+            <p id="messageBoxText">This is the message text.</p>
+            <button id="messageBoxButton" class="message-box-button comic-border-button">OK</button>
+        </div>
+    </div>
+
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
