@@ -99,9 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
             date: "April 2025",
             description: "This certification proves that I understand core data concepts and Azure data services, laying the foundation for roles in data engineering, analytics, or cloud.",
             fullContent: `
-                <p>This certification proves that I understand core data concepts and Azure data services, laying the foundation for roles in data engineering, analytics, or cloud.</p>
-                <p>The Super Developer Certification from <strong>Awesome Certifiers Inc.</strong>, achieved in January 2025, is a testament to advanced skills in full-stack development. It covered a wide range of topics including modern JavaScript frameworks, database management, and cloud deployment strategies. Excelsior!</p>
-                <p>The examination process was rigorous, involving both theoretical questions and practical coding challenges designed to simulate real-world problem-solving scenarios. Earning this was a significant milestone. KA-CHING!</p>
+                <p>This certification demonstrates a solid understanding of core data concepts and Azure data services, providing a strong foundation for roles in data engineering, analytics, and cloud computing.</p>
+                <p>The <strong>Microsoft Certified: Azure Data Fundamentals (DP-900)</strong>, earned in [Your Month Year], validates essential knowledge of data storage, processing, and analytics on Azure. It covers both relational and non-relational data models, batch vs. streaming workloads, and Azure services like Synapse, Cosmos DB, and Data Lake.</p>
+                <p>The exam included conceptual questions and scenario-based challenges, testing the ability to apply data principles in cloud-native environments. Earning this certification signifies a key milestone in building cloud data expertise. SHAZAM!</p>
             `,
             link: "#",
             buttonText: "See Badge", 
