@@ -94,12 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- "DATABASE" FOR CERTIFICATIONS ---
     const certificationsData = [
         {
-            title: "Super Developer Certification",
-            issuer: "Awesome Certifiers Inc.",
-            date: "Jan 2025",
-            description: "This certification proves I can leap tall bugs in a single bound! WHIZ-BANG!",
+            title: "Azure Data Fundamentals, DP-900",
+            issuer: "Microsoft",
+            date: "April 2025",
+            description: "This certification proves that I understand core data concepts and Azure data services, laying the foundation for roles in data engineering, analytics, or cloud.",
             fullContent: `
-                <p>This certification proves I can leap tall bugs in a single bound! WHIZ-BANG!</p>
+                <p>This certification proves that I understand core data concepts and Azure data services, laying the foundation for roles in data engineering, analytics, or cloud.</p>
                 <p>The Super Developer Certification from <strong>Awesome Certifiers Inc.</strong>, achieved in January 2025, is a testament to advanced skills in full-stack development. It covered a wide range of topics including modern JavaScript frameworks, database management, and cloud deployment strategies. Excelsior!</p>
                 <p>The examination process was rigorous, involving both theoretical questions and practical coding challenges designed to simulate real-world problem-solving scenarios. Earning this was a significant milestone. KA-CHING!</p>
             `,
@@ -109,10 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
             buttonHoverColor: "hover:bg-teal-600"
         },
         {
-            title: "Code Crusader Diploma",
-            issuer: "Heroic Coding Academy",
-            date: "Dec 2024",
-            description: "Mastered the ancient arts of JavaScript and Python. FEAR MY FUNCTIONS! SPLAT!",
+            title: "Azure AI Fundamentals, AI-900",
+            issuer: "Microsoft",
+            date: "March 2025",
+            description: "This certification proves that I understand fundamental AI concepts and how Microsoft Azure delivers AI services like machine learning, computer vision, and natural language processing.",
             fullContent: `
                 <p>Mastered the ancient arts of JavaScript and Python. FEAR MY FUNCTIONS! SPLAT!</p>
                 <p>Awarded in December 2024, the Code Crusader Diploma from the <strong>Heroic Coding Academy</strong> signifies proficiency in core programming languages and software development principles. The curriculum emphasized clean code, data structures, and algorithmic thinking. Gadzooks!</p>
