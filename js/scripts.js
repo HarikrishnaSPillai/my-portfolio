@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Azure Data Fundamentals, DP-900",
             issuer: "Microsoft",
             date: "April 2025",
-            description: "This certification proves",
+            description: "This certification proves that I understand core data concepts and Azure data services, laying the foundation for roles in data engineering, analytics, or cloud.",
             fullContent: `
                 <p>This certification proves that I understand core data concepts and Azure data services, laying the foundation for roles in data engineering, analytics, or cloud.</p>
                 <p>The Super Developer Certification from <strong>Awesome Certifiers Inc.</strong>, achieved in January 2025, is a testament to advanced skills in full-stack development. It covered a wide range of topics including modern JavaScript frameworks, database management, and cloud deployment strategies. Excelsior!</p>
