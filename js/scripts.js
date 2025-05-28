@@ -109,10 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
             buttonHoverColor: "hover:bg-teal-600"
         },
         {
-            title: "Code Crusader Diploma",
-            issuer: "Heroic Coding Academy",
-            date: "Dec 2024",
-            description: "Mastered the ancient arts of JavaScript and Python. FEAR MY FUNCTIONS! SPLAT!",
+            title: "Azure AI Fundamentals, AI-900",
+            issuer: "Microsoft",
+            date: "March 2025",
+            description: "This certification proves that I understand fundamental AI concepts and how Microsoft Azure delivers AI services like machine learning, computer vision, and natural language processing.",
             fullContent: `
                 <p>Mastered the ancient arts of JavaScript and Python. FEAR MY FUNCTIONS! SPLAT!</p>
                 <p>Awarded in December 2024, the Code Crusader Diploma from the <strong>Heroic Coding Academy</strong> signifies proficiency in core programming languages and software development principles. The curriculum emphasized clean code, data structures, and algorithmic thinking. Gadzooks!</p>
