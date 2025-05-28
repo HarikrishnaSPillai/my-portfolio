@@ -159,44 +159,45 @@ section > .container { position: relative; z-index: 1; }
 /* Modal Styles */
 .modal-overlay {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.85); /* Slightly darker overlay */
-    display: flex; justify-content: center; align-items: center;
+    background-color: rgba(0, 0, 0, 0.85); 
+    display: flex; justify-content: center; align-items: center; 
     z-index: 2000; opacity: 0; visibility: hidden;
     transition: opacity 0.3s ease, visibility 0s linear 0.3s;
-    padding: 20px; /* Add some padding around the modal content wrapper */
+    padding: 20px; 
     box-sizing: border-box;
 }
 .modal-overlay.active {
     opacity: 1; visibility: visible; transition: opacity 0.3s ease;
 }
 .modal-content-wrapper {
-    width: 100%; /* Take full width of padded overlay */
-    height: 100%; /* Take full height of padded overlay */
-    max-width: none; /* Remove max-width constraint if aiming for full page */
-    max-height: none; /* Remove max-height constraint */
-    overflow-y: auto; 
-    display: flex; /* For centering the actual content if it's smaller */
-    align-items: center;
-    justify-content: center;
+    width: 100%; 
+    height: 100%; 
+    max-width: none; 
+    max-height: none; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 .modal-content {
     background-color: #fff;
-    padding: 2rem; /* Keep some padding inside the content box */
+    padding: 2rem; 
     border-radius: 0px; 
-    width: 95%; /* Make content take most of the wrapper width */
-    height: 90%; /* Make content take most of the wrapper height */
-    max-width: 1600px; /* Optional: still good to have a very large max-width */
-    max-height: 90vh; /* Keep a bit of vertical margin */
+    width: 95%; 
+    height: 90%; 
+    max-width: 1600px; 
+    max-height: 90vh; 
     position: relative;
-    transform: scale(0.9);
+    transform: scale(0.9) translateY(-5vh); 
     transition: transform 0.3s ease;
-    display: flex; /* Use flex to structure inner content */
-    flex-direction: column; /* Stack title, image, content vertically */
-    overflow: hidden; /* Prevent inner content from breaking out before scroll */
+    display: flex; 
+    flex-direction: column; 
+    overflow-y: auto; /* CHANGED: Make the entire modal content scrollable */
 }
-.modal-overlay.active .modal-content { transform: scale(1); }
+.modal-overlay.active .modal-content { 
+    transform: scale(1) translateY(-5vh); 
+}
 .modal-close-btn {
-    position: absolute; top: 10px; right: 10px; /* Adjusted for inside a larger modal */
+    position: absolute; top: 10px; right: 10px; 
     background-color: #000; color: yellow; border: 3px solid yellow;
     width: 40px; height: 40px; border-radius: 50%;
     font-family: 'Bangers', cursive; font-size: 24px; line-height: 34px; 
@@ -209,28 +210,31 @@ section > .container { position: relative; z-index: 1; }
 #modalImage {
     max-width: 100%; 
     height: auto;
-    max-height: 40vh; /* Adjust max height relative to modal size */
+    max-height: 40vh; 
     object-fit: contain; 
     margin-bottom: 1rem; 
     border: 3px solid #000;
-    align-self: center; /* Center image if it's narrower than content area */
+    align-self: center; 
+    flex-shrink: 0; 
 }
 #modalTitle {
-    font-family: 'Bangers', cursive; font-size: 3rem; /* Larger for bigger modal */
-    color: #000; margin-bottom: 0.75rem; text-shadow: 2px 2px 0px #ccc;
+    font-family: 'Bangers', cursive; font-size: 2.5rem; 
+    color: #000; margin-bottom: 0.5rem; text-shadow: 2px 2px 0px #ccc;
     text-align: center;
-    flex-shrink: 0; /* Prevent title from shrinking */
+    flex-shrink: 0; 
 }
 #modalSubDetail { 
-    font-size: 1.1rem; color: #555; margin-bottom: 1.5rem; font-style: italic;
+    font-size: 1rem; 
+    color: #555; margin-bottom: 1rem; 
+    font-style: italic;
     text-align: center;
-    flex-shrink: 0; /* Prevent sub-detail from shrinking */
+    flex-shrink: 0; 
 }
 #modalFullContent {
-    font-size: 1.1rem; line-height: 1.7; color: #333;
-    overflow-y: auto; /* This will handle scrolling for the text content */
-    padding: 10px; /* Add some padding inside the scrollable area */
-    flex-grow: 1; /* Allow this area to take remaining space */
-    width: 100%; /* Ensure it uses available width */
+    font-size: 1rem; 
+    line-height: 1.6; 
+    color: #333;
+    padding: 10px; 
+    width: 100%; 
 }
 #modalFullContent p { margin-bottom: 1.2em; }
