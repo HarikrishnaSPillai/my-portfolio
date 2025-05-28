@@ -94,12 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- "DATABASE" FOR CERTIFICATIONS ---
     const certificationsData = [
         {
-            title: "Super Developer Certification",
-            issuer: "Awesome Certifiers Inc.",
-            date: "Jan 2025",
-            description: "This certification proves I can leap tall bugs in a single bound! WHIZ-BANG!",
+            title: "Azure Data Fundamentals, DP-900",
+            issuer: "Microsoft",
+            date: "April 2025",
+            description: "This certification proves",
             fullContent: `
-                <p>This certification proves I can leap tall bugs in a single bound! WHIZ-BANG!</p>
+                <p>This certification proves that I understand core data concepts and Azure data services, laying the foundation for roles in data engineering, analytics, or cloud.</p>
                 <p>The Super Developer Certification from <strong>Awesome Certifiers Inc.</strong>, achieved in January 2025, is a testament to advanced skills in full-stack development. It covered a wide range of topics including modern JavaScript frameworks, database management, and cloud deployment strategies. Excelsior!</p>
                 <p>The examination process was rigorous, involving both theoretical questions and practical coding challenges designed to simulate real-world problem-solving scenarios. Earning this was a significant milestone. KA-CHING!</p>
             `,
