@@ -51,59 +51,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    // --- "DATABASE" FOR BLOG POSTS ---
-    const blogData = [
-        {
-            title: "My First Blog Post!",
-            date: "May 27, 2025",
-            shortContent: "Welcome to the command center! This is where I'll share updates, insights, and maybe a few secret formulas. Stay tuned, heroes! ZAP!",
-            category: "Announcements",
-            fullContent: `
-                <p>Welcome to the command center! This is where I'll share updates, insights, and maybe a few secret formulas. Stay tuned, heroes! ZAP!</p>
-                <p>This is the <strong>first main paragraph</strong> of the blog post titled "My First Blog Post!". Here, we would expand on the initial summary, providing more context and depth. For example, if the post is about a new technology, this paragraph might explain its core concepts. WHOOSH!</p>
-                <p>The <strong>second paragraph</strong> could explore different aspects or use cases. Perhaps it includes a short tutorial, some code snippets (if applicable), or a discussion of pros and cons. It's all about engaging the reader and offering valuable insights. BAM!</p>
-                <p>In the <strong>third paragraph</strong>, we might draw some conclusions, offer personal opinions, or invite discussion in the comments section (if this were a real blog platform). The idea is to wrap up the main points and leave the reader with something to think about. ZING!</p>
-            `
-        },
-        {
-            title: "The Power of Comic Sans (Just Kidding!)",
-            date: "May 26, 2025",
-            shortContent: "Let's talk typography in design. While Comic Sans gets a bad rap, choosing the right font is CRITICAL for impact. POW!",
-            category: "Design Tips",
-            fullContent: `
-                <p>Let's talk typography in design. While Comic Sans gets a bad rap, choosing the right font is CRITICAL for impact. POW!</p>
-                <p>In this post, we explore the fascinating world of typography. Good type can elevate a design from merely functional to truly memorable. We'll discuss principles like hierarchy, contrast, and readability. THWIP!</p>
-                <p>We'll also look at some common typographic pitfalls and how to avoid them. Choosing appropriate font pairings and understanding licensing are also key aspects for any serious designer or developer. Remember, with great font power comes great responsibility! ZOWIE!</p>
-                <p>So, while we might joke about Comic Sans, the underlying message is serious: pay attention to your type! It speaks volumes before a single word is read. KA-BOOM!</p>
-            `
-        },
-        {
-            title: "Debugging Adventures",
-            date: "May 25, 2025",
-            shortContent: "Spent the day wrestling a mischievous bug. Victory was achieved with perseverance and a lot of console.log()! WHAMMO!",
-            category: "Dev Life",
-            fullContent: `
-                <p>Spent the day wrestling a mischievous bug. Victory was achieved with perseverance and a lot of console.log()! WHAMMO!</p>
-                <p>Every developer knows the thrill (and sometimes frustration) of debugging. This particular bug was a sneaky one, hiding deep within an asynchronous callback function. It took hours of console logging, breakpoint setting, and rubber duck debugging. BIF!</p>
-                <p>The breakthrough came when I decided to simplify the problem, isolating the problematic code block. Step by step, I traced the data flow until the culprit revealed itself – a classic off-by-one error, disguised by layers of complexity. SOCKO!</p>
-                <p>The satisfaction of finally squashing that bug was immense! It's a reminder that even the most challenging problems can be solved with a methodical approach and a bit of grit. And maybe a lot of coffee. ZZZAP!</p>
-            `
-        }
-    ];
+    // --- "DATABASE" FOR BLOG POSTS - REMOVED ---
+    // const blogData = [ ... ]; // This array is no longer used. Data comes from metadata.json
 
     // --- "DATABASE" FOR CERTIFICATIONS ---
     const certificationsData = [
         {
             title: "Azure Data Fundamentals, DP-900",
             issuer: "Microsoft",
-            date: "April 2025",
+            date: "April 2025", // Assuming you meant a future or recent date
             description: "This certification proves that I understand core data concepts and Azure data services, laying the foundation for roles in data engineering, analytics, or cloud.",
             fullContent: `
                 <p>This certification demonstrates a solid understanding of core data concepts and Azure data services, providing a strong foundation for roles in data engineering, analytics, and cloud computing.</p>
-                <p>The <strong>Microsoft Certified: Azure Data Fundamentals (DP-900)</strong>, earned in [Your Month Year], validates essential knowledge of data storage, processing, and analytics on Azure. It covers both relational and non-relational data models, batch vs. streaming workloads, and Azure services like Synapse, Cosmos DB, and Data Lake.</p>
+                <p>The <strong>Microsoft Certified: Azure Data Fundamentals (DP-900)</strong>, earned in April 2025, validates essential knowledge of data storage, processing, and analytics on Azure. It covers both relational and non-relational data models, batch vs. streaming workloads, and Azure services like Synapse, Cosmos DB, and Data Lake.</p>
                 <p>The exam included conceptual questions and scenario-based challenges, testing the ability to apply data principles in cloud-native environments. Earning this certification signifies a key milestone in building cloud data expertise. SHAZAM!</p>
             `,
-            link: "#",
+            link: "#", // Replace with actual link to credential if available
             buttonText: "See Badge", 
             buttonColor: "bg-teal-500",
             buttonHoverColor: "hover:bg-teal-600"
@@ -111,27 +74,26 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: "Azure AI Fundamentals, AI-900",
             issuer: "Microsoft",
-            date: "March 2025",
+            date: "March 2025", // Assuming you meant a future or recent date
             description: "This certification proves that I understand fundamental AI concepts and how Microsoft Azure delivers AI services like machine learning, computer vision, and natural language processing.",
             fullContent: `
-                <p>Mastered the ancient arts of JavaScript and Python. FEAR MY FUNCTIONS! SPLAT!</p>
-                <p>Awarded in December 2024, the Code Crusader Diploma from the <strong>Heroic Coding Academy</strong> signifies proficiency in core programming languages and software development principles. The curriculum emphasized clean code, data structures, and algorithmic thinking. Gadzooks!</p>
-                <p>This intensive program provided a strong foundation for building complex applications and tackling challenging technical problems. It was a journey of discovery and skill enhancement. HOLY CODE, BATMAN!</p>
+                <p>This certification, the <strong>Microsoft Certified: Azure AI Fundamentals (AI-900)</strong>, validates foundational knowledge of machine learning and artificial intelligence concepts and related Microsoft Azure services.</p>
+                <p>Achieved in March 2025, it demonstrates an understanding of AI workloads and considerations, principles of machine learning on Azure, computer vision workloads on Azure, and Natural Language Processing (NLP) workloads on Azure.</p>
+                <p>It's an excellent starting point for anyone looking to build a career in AI or understand how AI can be leveraged using cloud platforms. KAPOW!</p>
             `,
-            link: "#",
+            link: "#", // Replace with actual link
             buttonText: "See Badge",
             buttonColor: "bg-teal-500",
             buttonHoverColor: "hover:bg-teal-600"
         },
-        {
-            title: "Pixel Protector License",
-            issuer: "Design Guardians Guild",
-            date: "Nov 2024",
-            description: "Ensuring every pixel is perfectly placed and every design is dynamic. KRUNCH!",
+        { // Keeping one placeholder for structure, can be replaced or removed
+            title: "Placeholder Certification",
+            issuer: "Future Achievements Inc.",
+            date: "To Be Announced",
+            description: "Details about this future certification will be updated here. KRUNCH!",
             fullContent: `
-                <p>Ensuring every pixel is perfectly placed and every design is dynamic. KRUNCH!</p>
-                <p>The Pixel Protector License, granted by the <strong>Design Guardians Guild</strong> in November 2024, recognizes expertise in UI/UX design principles and practices. This includes user research, wireframing, prototyping, and visual design. By the Hoary Hosts of Hoggoth!</p>
-                <p>Emphasis was placed on creating user-centered designs that are not only aesthetically pleasing but also highly functional and accessible. This license marks a commitment to crafting exceptional digital experiences. Nuff Said!</p>
+                <p>Details about this future certification will be updated here. KRUNCH!</p>
+                <p>This placeholder represents an upcoming achievement or a spot for another one of your valuable certifications. Keep learning and growing! WONDERFUL!</p>
             `,
             link: "#",
             buttonText: "See Badge",
@@ -169,28 +131,46 @@ document.addEventListener('DOMContentLoaded', () => {
         container.innerHTML = projectsHTML;
     }
 
-    function renderBlogPosts() {
+    async function renderBlogPosts() {
         const container = document.getElementById('blogCardsContainer');
-        if (!container) return;
-        let blogHTML = '';
-        blogData.forEach(post => {
-            blogHTML += `
-                <div class="bg-white rounded-lg comic-border blog-card p-1" 
-                     data-title="${post.title}" 
-                     data-subdetail="${post.date} - ${post.category}"
-                     data-fullcontent="${post.fullContent.replace(/"/g, '&quot;')}">
-                    <div class="blog-title-bg p-4 comic-border-sm rounded-t-md"> 
-                        <h3 class="font-bangers text-2xl text-black text-center">${post.title}</h3>
+        if (!container) {
+            console.error("Blog cards container not found!");
+            return;
+        }
+        try {
+            // Path relative to index.html where script.js is loaded
+            const response = await fetch('blogs/metadata.json'); 
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}, while fetching metadata.json`);
+            }
+            const blogMetadata = await response.json();
+            
+            let blogHTML = '';
+            blogMetadata.forEach(post => {
+                blogHTML += `
+                    <div class="bg-white rounded-lg comic-border blog-card p-1" 
+                         data-title="${post.title}" 
+                         data-subdetail="${post.date} - ${post.category}"
+                         data-filename="blogs/${post.fileName}"> 
+                        <div class="blog-title-bg p-4 comic-border-sm rounded-t-md"> 
+                            <h3 class="font-bangers text-2xl text-black text-center">${post.title}</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm mb-2 text-gray-600">${post.date}</p>
+                            <p class="mb-4">${post.shortContent}</p>
+                            <p class="text-xs text-gray-500">Category: ${post.category}</p>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <p class="text-sm mb-2 text-gray-600">${post.date}</p>
-                        <p class="mb-4">${post.shortContent}</p>
-                        <p class="text-xs text-gray-500">Category: ${post.category}</p>
-                    </div>
-                </div>
-            `;
-        });
-        container.innerHTML = blogHTML;
+                `;
+            });
+            container.innerHTML = blogHTML;
+            // It's important to re-attach listeners specifically for blog cards here
+            // because they are rendered asynchronously.
+            attachBlogCardListeners(); 
+        } catch (error) {
+            console.error("Could not load blog posts:", error);
+            container.innerHTML = "<p class='text-center text-red-500 col-span-full'>Could not load blog posts. Please check the console and ensure 'blogs/metadata.json' and individual blog HTML files exist and are accessible.</p>";
+        }
     }
 
     function renderCertifications() {
@@ -230,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalFullContent = document.getElementById('modalFullContent');
     const body = document.body;
 
-    function openModal(data) {
+    async function openModal(data) {
         modalTitle.textContent = data.title || '';
         if (data.imageSrc) {
             modalImage.src = data.imageSrc;
@@ -241,7 +221,24 @@ document.addEventListener('DOMContentLoaded', () => {
             modalImage.classList.add('hidden');
         }
         modalSubDetail.textContent = data.subDetail || '';
-        modalFullContent.innerHTML = data.fullContent || ''; 
+
+        if (data.fileName) { // If it's a blog post needing content fetched
+            try {
+                // Path relative to index.html
+                const response = await fetch(data.fileName); 
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}, while fetching ${data.fileName}`);
+                }
+                const htmlContent = await response.text();
+                modalFullContent.innerHTML = htmlContent;
+            } catch (error) {
+                console.error(`Could not load blog content from ${data.fileName}:`, error);
+                modalFullContent.innerHTML = `<p class='text-red-500'>Error loading content from ${data.fileName}. Please check the file path and ensure the file exists.</p>`;
+            }
+        } else { // For projects or certs where fullContent is directly provided
+            modalFullContent.innerHTML = data.fullContent || ''; 
+        }
+        
         detailModal.classList.add('active');
         body.classList.add('modal-open');
     }
@@ -249,6 +246,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function closeModal() {
         detailModal.classList.remove('active');
         body.classList.remove('modal-open');
+        modalTitle.textContent = '';
+        modalImage.src = '';
+        modalImage.classList.add('hidden');
+        modalSubDetail.textContent = '';
+        modalFullContent.innerHTML = '';
     }
 
     if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
@@ -265,8 +267,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- ATTACH LISTENERS AFTER RENDERING ---
-    function attachModalListeners() {
+    // --- ATTACH MODAL LISTENERS ---
+    function attachProjectAndCertListeners() {
+        // Project "View Project!" buttons
         document.querySelectorAll('.view-project-btn').forEach(button => {
             button.addEventListener('click', (e) => {
                 openModal({
@@ -277,17 +280,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         });
-
-        document.querySelectorAll('.blog-card').forEach(card => {
-            card.addEventListener('click', () => {
-                openModal({
-                    title: card.dataset.title,
-                    subDetail: card.dataset.subdetail,
-                    fullContent: card.dataset.fullcontent
-                });
-            });
-        });
         
+        // Cert cards 
         document.querySelectorAll('.cert-card').forEach(card => {
             card.addEventListener('click', (e) => {
                 if (e.target.closest('a.cert-link-btn')) { 
@@ -302,11 +296,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function attachBlogCardListeners() {
+        // Blog cards 
+        document.querySelectorAll('.blog-card').forEach(card => {
+            card.addEventListener('click', () => {
+                openModal({
+                    title: card.dataset.title,
+                    subDetail: card.dataset.subdetail,
+                    fileName: card.dataset.filename // Pass filename to fetch
+                });
+            });
+        });
+    }
+
+
     // --- INITIALIZE PAGE ---
     renderProjects();
-    renderBlogPosts();
+    renderBlogPosts(); // This is async and will call attachBlogCardListeners internally
     renderCertifications();
-    attachModalListeners(); 
+    attachProjectAndCertListeners(); // Attach listeners for projects and certs
+
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

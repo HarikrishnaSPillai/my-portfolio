@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Apache Parquet: The Buzzword in Big Data Explained",
+        "date": "May 29, 2025",
+        "shortContent": "Discover why Apache Parquet is a game-changer for efficient data storage and analytics in the cloud and big data ecosystems.",
+        "category": "Data Engineering",
+        "fileName": "apacheparquet.html"
+    },
+    {
+        "title": "My First Blog Post!",
+        "date": "May 27, 2025",
+        "shortContent": "Welcome to the command center! This is where I'll share updates, insights, and maybe a few secret formulas. Stay tuned, heroes! ZAP!",
+        "category": "Announcements",
+        "fileName": "my-first-blog-post.html"
+    },
+    {
+        "title": "The Power of Comic Sans (Just Kidding!)",
+        "date": "May 26, 2025",
+        "shortContent": "Let's talk typography in design. While Comic Sans gets a bad rap, choosing the right font is CRITICAL for impact. POW!",
+        "category": "Design Tips",
+        "fileName": "power-of-comic-sans.html"
+    }
+]
